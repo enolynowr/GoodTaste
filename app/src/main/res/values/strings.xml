@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoodTaste</string>
+    <string name="input_keyword">Please Enter a ID </string>
+    <string name="btn_search">Search</string>
+    <string name="txtvw_id">ID</string>
+    <string name="txtvw_name">Name</string>
+    <string name="txtvw_friends">Friends</string>
+</resources>

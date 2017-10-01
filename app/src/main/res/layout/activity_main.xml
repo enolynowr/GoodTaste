@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goodtaste.MainActivity">
+    <LinearLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edittext_keyword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/input_keyword"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/edittext_keyword"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/edittext_keyword"
+            android:singleLine="true"
+            android:text="@string/btn_search"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtvw_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvw_id"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_api_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtvw_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvw_name"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_api_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_api_id" />
+
+        <TextView
+            android:id="@+id/txtvw_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvw_friends"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_api_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_api_id" />
+
+    </LinearLayout>
+
+</LinearLayout>
